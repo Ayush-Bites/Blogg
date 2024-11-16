@@ -1,2 +1,2 @@
-# Blogg
-Blogs of great choices on how and what
+#Structure 
+Blogs to know what you want to ask and what others think
