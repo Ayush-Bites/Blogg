@@ -1,15 +1,11 @@
-
-document.getElementById("postForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const newPostContent = document.getElementById("newPost").value;
-    if (newPostContent.trim() !== "") {
-        const post = document.createElement("div");
-        post.className = "post";
-        post.textContent = newPostContent;
-
-        document.getElementById("posts").prepend(post);
-        document.getElementById("newPost").value = "";
-    }
-});
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
     
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    
+    document.getElementById('displayUsername').textContent = 'Username: ' + username;
+    document.getElementById('displayEmail').textContent = 'Email: ' + email;
+    document.getElementById('profileDetails').style.display = 'block';
+});
